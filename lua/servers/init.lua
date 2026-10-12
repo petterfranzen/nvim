@@ -12,6 +12,12 @@ require("servers.dockerls")(capabilities)
 require("servers.emmet_ls")(capabilities)
 require("servers.yamlls")(capabilities)
 require("servers.tailwindcss")(capabilities)
+require("servers.angularls")(capabilities)
+require("servers.html")(capabilities)
+require("servers.cssls")(capabilities)
+require("servers.jdtls")(capabilities)
+require("servers.csharp_ls")(capabilities)
+require("servers.phpactor")(capabilities)
 
 -- Linters & Formatters
 require("servers.efm-langserver")(capabilities)
@@ -29,4 +35,10 @@ vim.lsp.enable({
   'yamlls',
   'tailwindcss',
   'efm',
+  'angularls',
+  'html',
+  'cssls',
+  'jdtls',
+  'csharp_ls',
+  'phpactor',
 })
